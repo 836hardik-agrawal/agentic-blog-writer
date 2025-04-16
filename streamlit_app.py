@@ -58,9 +58,4 @@ if st.session_state.blog_md and st.session_state.metadata:
     - **Flesch-Kincaid Grade Level**: {grade_score:.2f}
     """)
 
-    if ease_score >= 60:
-        st.success("✅ This blog is easy to read!")
-    elif 30 <= ease_score < 60:
-        st.warning("⚠️ This blog is moderately difficult to read.")
-    else:
-        st.error("❗ This blog is hard to read. Consider simplifying the language.")
+   
