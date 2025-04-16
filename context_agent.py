@@ -8,7 +8,6 @@ from functools import lru_cache
 class ContextAgent:
     def __init__(self, topic: str):
         self.topic = topic
-        # self.news_url = f"https://newsdata.io/api/1/news?apikey={self._get_api_key()}&q={topic}&language=en"
         self.news_url = f"https://newsdata.io/api/1/news?apikey={self._get_api_key()}&q={topic}&language=en"
         self.datamuse_url = f"https://api.datamuse.com/words?ml={topic}"
         self.quotable_url = "https://api.quotable.io/quotes/random?limit=5"
